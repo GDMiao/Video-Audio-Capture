@@ -14,6 +14,10 @@
 		6E5EBFF51EC3659300C75636 /* VideoAudioCapture.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6E5EBFF31EC3659300C75636 /* VideoAudioCapture.xcdatamodeld */; };
 		6E5EBFF71EC3659300C75636 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E5EBFF61EC3659300C75636 /* Assets.xcassets */; };
 		6E5EBFFA1EC3659300C75636 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E5EBFF81EC3659300C75636 /* LaunchScreen.storyboard */; };
+		6E5EC00E1EC36A3600C75636 /* MCaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5EC00C1EC36A3600C75636 /* MCaptureViewController.m */; };
+		6E5EC00F1EC36A3600C75636 /* MCaptureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E5EC00D1EC36A3600C75636 /* MCaptureViewController.xib */; };
+		6E5EC0121EC36AE500C75636 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E5EC0111EC36AE500C75636 /* AVFoundation.framework */; };
+		6E5EC0151EC444FE00C75636 /* focus.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E5EC0141EC444FE00C75636 /* focus.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,11 @@
 		6E5EBFF61EC3659300C75636 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E5EBFF91EC3659300C75636 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E5EBFFB1EC3659300C75636 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E5EC00B1EC36A3600C75636 /* MCaptureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCaptureViewController.h; sourceTree = "<group>"; };
+		6E5EC00C1EC36A3600C75636 /* MCaptureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCaptureViewController.m; sourceTree = "<group>"; };
+		6E5EC00D1EC36A3600C75636 /* MCaptureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MCaptureViewController.xib; sourceTree = "<group>"; };
+		6E5EC0111EC36AE500C75636 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		6E5EC0141EC444FE00C75636 /* focus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = focus.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E5EC0121EC36AE500C75636 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +56,7 @@
 			children = (
 				6E5EBFE61EC3659300C75636 /* VideoAudioCapture */,
 				6E5EBFE51EC3659300C75636 /* Products */,
+				6E5EC0101EC36AE500C75636 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +71,7 @@
 		6E5EBFE61EC3659300C75636 /* VideoAudioCapture */ = {
 			isa = PBXGroup;
 			children = (
+				6E5EC0131EC36FA900C75636 /* ImageLib */,
 				6E5EC0041EC366B800C75636 /* ThridLibraries */,
 				6E5EC0031EC3667B00C75636 /* JSONModel */,
 				6E5EC0011EC3667400C75636 /* Class */,
@@ -96,6 +108,7 @@
 		6E5EC0021EC3667400C75636 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				6E5EC00A1EC36A3600C75636 /* Capture.Controller */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -112,6 +125,32 @@
 			children = (
 			);
 			path = ThridLibraries;
+			sourceTree = "<group>";
+		};
+		6E5EC00A1EC36A3600C75636 /* Capture.Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6E5EC00B1EC36A3600C75636 /* MCaptureViewController.h */,
+				6E5EC00C1EC36A3600C75636 /* MCaptureViewController.m */,
+				6E5EC00D1EC36A3600C75636 /* MCaptureViewController.xib */,
+			);
+			path = Capture.Controller;
+			sourceTree = "<group>";
+		};
+		6E5EC0101EC36AE500C75636 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E5EC0111EC36AE500C75636 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6E5EC0131EC36FA900C75636 /* ImageLib */ = {
+			isa = PBXGroup;
+			children = (
+				6E5EC0141EC444FE00C75636 /* focus.png */,
+			);
+			path = ImageLib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +184,7 @@
 				TargetAttributes = {
 					6E5EBFE31EC3659300C75636 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 494KFCEEMF;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -173,8 +213,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E5EBFFA1EC3659300C75636 /* LaunchScreen.storyboard in Resources */,
+				6E5EC0151EC444FE00C75636 /* focus.png in Resources */,
 				6E5EBFF71EC3659300C75636 /* Assets.xcassets in Resources */,
 				6E5EBFF21EC3659300C75636 /* Main.storyboard in Resources */,
+				6E5EC00F1EC36A3600C75636 /* MCaptureViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E5EBFEF1EC3659300C75636 /* ViewController.m in Sources */,
+				6E5EC00E1EC36A3600C75636 /* MCaptureViewController.m in Sources */,
 				6E5EBFEC1EC3659300C75636 /* AppDelegate.m in Sources */,
 				6E5EBFE91EC3659300C75636 /* main.m in Sources */,
 				6E5EBFF51EC3659300C75636 /* VideoAudioCapture.xcdatamodeld in Sources */,
@@ -308,6 +351,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 494KFCEEMF;
 				INFOPLIST_FILE = VideoAudioCapture/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MiaoGuodong.VideoAudioCapture;
@@ -319,6 +363,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 494KFCEEMF;
 				INFOPLIST_FILE = VideoAudioCapture/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MiaoGuodong.VideoAudioCapture;
@@ -345,6 +390,7 @@
 				6E5EC0001EC3659300C75636 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
