@@ -30,6 +30,11 @@
 		6E5EC0361EC5E2C800C75636 /* 视频1-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E5EC0341EC5E2C800C75636 /* 视频1-0.png */; };
 		6E5EC0371EC5E2C800C75636 /* 视频1-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E5EC0351EC5E2C800C75636 /* 视频1-1.png */; };
 		6E5EC03B1EC5E43D00C75636 /* MGWaterFallFLowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5EC03A1EC5E43D00C75636 /* MGWaterFallFLowLayout.m */; };
+		6E5EC03E1EC5EA6200C75636 /* AnchorItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5EC03D1EC5EA6200C75636 /* AnchorItem.m */; };
+		6E5EC0411EC5EA8100C75636 /* LiveItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5EC0401EC5EA8100C75636 /* LiveItem.m */; };
+		6E5EC0471EC5EDEE00C75636 /* AFN-Network.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5EC0461EC5EDED00C75636 /* AFN-Network.m */; };
+		6E5EC04C1EC6055300C75636 /* MDiscoverCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5EC04A1EC6055300C75636 /* MDiscoverCollectionViewCell.m */; };
+		6E5EC04D1EC6055300C75636 /* MDiscoverCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E5EC04B1EC6055300C75636 /* MDiscoverCollectionViewCell.xib */; };
 		BDC5F59B6B94D6B5FEC01522 /* libPods-VideoAudioCapture.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED84E4810247F1E8AB90A33A /* libPods-VideoAudioCapture.a */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +74,15 @@
 		6E5EC0351EC5E2C800C75636 /* 视频1-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "视频1-1.png"; sourceTree = "<group>"; };
 		6E5EC0391EC5E43D00C75636 /* MGWaterFallFLowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGWaterFallFLowLayout.h; sourceTree = "<group>"; };
 		6E5EC03A1EC5E43D00C75636 /* MGWaterFallFLowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGWaterFallFLowLayout.m; sourceTree = "<group>"; };
+		6E5EC03C1EC5EA6200C75636 /* AnchorItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnchorItem.h; sourceTree = "<group>"; };
+		6E5EC03D1EC5EA6200C75636 /* AnchorItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnchorItem.m; sourceTree = "<group>"; };
+		6E5EC03F1EC5EA8100C75636 /* LiveItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveItem.h; sourceTree = "<group>"; };
+		6E5EC0401EC5EA8100C75636 /* LiveItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveItem.m; sourceTree = "<group>"; };
+		6E5EC0451EC5EDED00C75636 /* AFN-Network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AFN-Network.h"; sourceTree = "<group>"; };
+		6E5EC0461EC5EDED00C75636 /* AFN-Network.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFN-Network.m"; sourceTree = "<group>"; };
+		6E5EC0491EC6055300C75636 /* MDiscoverCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDiscoverCollectionViewCell.h; sourceTree = "<group>"; };
+		6E5EC04A1EC6055300C75636 /* MDiscoverCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDiscoverCollectionViewCell.m; sourceTree = "<group>"; };
+		6E5EC04B1EC6055300C75636 /* MDiscoverCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MDiscoverCollectionViewCell.xib; sourceTree = "<group>"; };
 		ED84E4810247F1E8AB90A33A /* libPods-VideoAudioCapture.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VideoAudioCapture.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -164,6 +178,10 @@
 		6E5EC0031EC3667B00C75636 /* JSONModel */ = {
 			isa = PBXGroup;
 			children = (
+				6E5EC03C1EC5EA6200C75636 /* AnchorItem.h */,
+				6E5EC03D1EC5EA6200C75636 /* AnchorItem.m */,
+				6E5EC03F1EC5EA8100C75636 /* LiveItem.h */,
+				6E5EC0401EC5EA8100C75636 /* LiveItem.m */,
 			);
 			path = JSONModel;
 			sourceTree = "<group>";
@@ -222,6 +240,9 @@
 				6E5EC0211EC5D59A00C75636 /* MDiscoverViewController.h */,
 				6E5EC0221EC5D59A00C75636 /* MDiscoverViewController.m */,
 				6E5EC0231EC5D59A00C75636 /* MDiscoverViewController.xib */,
+				6E5EC0491EC6055300C75636 /* MDiscoverCollectionViewCell.h */,
+				6E5EC04A1EC6055300C75636 /* MDiscoverCollectionViewCell.m */,
+				6E5EC04B1EC6055300C75636 /* MDiscoverCollectionViewCell.xib */,
 			);
 			path = Discover.Controller;
 			sourceTree = "<group>";
@@ -229,6 +250,8 @@
 		6E5EC0261EC5D5B300C75636 /* NetworkModule */ = {
 			isa = PBXGroup;
 			children = (
+				6E5EC0451EC5EDED00C75636 /* AFN-Network.h */,
+				6E5EC0461EC5EDED00C75636 /* AFN-Network.m */,
 			);
 			path = NetworkModule;
 			sourceTree = "<group>";
@@ -317,6 +340,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E5EC04D1EC6055300C75636 /* MDiscoverCollectionViewCell.xib in Resources */,
 				6E5EC0361EC5E2C800C75636 /* 视频1-0.png in Resources */,
 				6E5EC0311EC5DAB900C75636 /* 发现1-1.png in Resources */,
 				6E5EBFFA1EC3659300C75636 /* LaunchScreen.storyboard in Resources */,
@@ -390,10 +414,14 @@
 				6E5EC0241EC5D59A00C75636 /* MDiscoverViewController.m in Sources */,
 				6E5EBFEF1EC3659300C75636 /* ViewController.m in Sources */,
 				6E5EC01B1EC5D37E00C75636 /* BaseNavigationViewController.m in Sources */,
+				6E5EC03E1EC5EA6200C75636 /* AnchorItem.m in Sources */,
 				6E5EC00E1EC36A3600C75636 /* MCaptureViewController.m in Sources */,
+				6E5EC04C1EC6055300C75636 /* MDiscoverCollectionViewCell.m in Sources */,
+				6E5EC0471EC5EDEE00C75636 /* AFN-Network.m in Sources */,
 				6E5EC01F1EC5D3B900C75636 /* BaseTabBarViewController.m in Sources */,
 				6E5EBFEC1EC3659300C75636 /* AppDelegate.m in Sources */,
 				6E5EC03B1EC5E43D00C75636 /* MGWaterFallFLowLayout.m in Sources */,
+				6E5EC0411EC5EA8100C75636 /* LiveItem.m in Sources */,
 				6E5EBFE91EC3659300C75636 /* main.m in Sources */,
 				6E5EC01C1EC5D37E00C75636 /* BaseViewController.m in Sources */,
 				6E5EBFF51EC3659300C75636 /* VideoAudioCapture.xcdatamodeld in Sources */,
