@@ -18,6 +18,18 @@
 		6E5EC00F1EC36A3600C75636 /* MCaptureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E5EC00D1EC36A3600C75636 /* MCaptureViewController.xib */; };
 		6E5EC0121EC36AE500C75636 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E5EC0111EC36AE500C75636 /* AVFoundation.framework */; };
 		6E5EC0151EC444FE00C75636 /* focus.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E5EC0141EC444FE00C75636 /* focus.png */; };
+		6E5EC01B1EC5D37E00C75636 /* BaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5EC0181EC5D37E00C75636 /* BaseNavigationViewController.m */; };
+		6E5EC01C1EC5D37E00C75636 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5EC01A1EC5D37E00C75636 /* BaseViewController.m */; };
+		6E5EC01F1EC5D3B900C75636 /* BaseTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5EC01E1EC5D3B900C75636 /* BaseTabBarViewController.m */; };
+		6E5EC0241EC5D59A00C75636 /* MDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5EC0221EC5D59A00C75636 /* MDiscoverViewController.m */; };
+		6E5EC0251EC5D59A00C75636 /* MDiscoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E5EC0231EC5D59A00C75636 /* MDiscoverViewController.xib */; };
+		6E5EC02E1EC5DAB900C75636 /* 个人3-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E5EC0281EC5DAB900C75636 /* 个人3-0.png */; };
+		6E5EC02F1EC5DAB900C75636 /* 个人3-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E5EC0291EC5DAB900C75636 /* 个人3-1.png */; };
+		6E5EC0301EC5DAB900C75636 /* 发现1-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E5EC02A1EC5DAB900C75636 /* 发现1-0.png */; };
+		6E5EC0311EC5DAB900C75636 /* 发现1-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E5EC02B1EC5DAB900C75636 /* 发现1-1.png */; };
+		6E5EC0361EC5E2C800C75636 /* 视频1-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E5EC0341EC5E2C800C75636 /* 视频1-0.png */; };
+		6E5EC0371EC5E2C800C75636 /* 视频1-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E5EC0351EC5E2C800C75636 /* 视频1-1.png */; };
+		6E5EC03B1EC5E43D00C75636 /* MGWaterFallFLowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5EC03A1EC5E43D00C75636 /* MGWaterFallFLowLayout.m */; };
 		BDC5F59B6B94D6B5FEC01522 /* libPods-VideoAudioCapture.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED84E4810247F1E8AB90A33A /* libPods-VideoAudioCapture.a */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +52,23 @@
 		6E5EC00D1EC36A3600C75636 /* MCaptureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MCaptureViewController.xib; sourceTree = "<group>"; };
 		6E5EC0111EC36AE500C75636 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		6E5EC0141EC444FE00C75636 /* focus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = focus.png; sourceTree = "<group>"; };
+		6E5EC0171EC5D37E00C75636 /* BaseNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationViewController.h; sourceTree = "<group>"; };
+		6E5EC0181EC5D37E00C75636 /* BaseNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationViewController.m; sourceTree = "<group>"; };
+		6E5EC0191EC5D37E00C75636 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		6E5EC01A1EC5D37E00C75636 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		6E5EC01D1EC5D3B900C75636 /* BaseTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBarViewController.h; sourceTree = "<group>"; };
+		6E5EC01E1EC5D3B900C75636 /* BaseTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarViewController.m; sourceTree = "<group>"; };
+		6E5EC0211EC5D59A00C75636 /* MDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDiscoverViewController.h; sourceTree = "<group>"; };
+		6E5EC0221EC5D59A00C75636 /* MDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDiscoverViewController.m; sourceTree = "<group>"; };
+		6E5EC0231EC5D59A00C75636 /* MDiscoverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MDiscoverViewController.xib; sourceTree = "<group>"; };
+		6E5EC0281EC5DAB900C75636 /* 个人3-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "个人3-0.png"; sourceTree = "<group>"; };
+		6E5EC0291EC5DAB900C75636 /* 个人3-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "个人3-1.png"; sourceTree = "<group>"; };
+		6E5EC02A1EC5DAB900C75636 /* 发现1-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "发现1-0.png"; sourceTree = "<group>"; };
+		6E5EC02B1EC5DAB900C75636 /* 发现1-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "发现1-1.png"; sourceTree = "<group>"; };
+		6E5EC0341EC5E2C800C75636 /* 视频1-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "视频1-0.png"; sourceTree = "<group>"; };
+		6E5EC0351EC5E2C800C75636 /* 视频1-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "视频1-1.png"; sourceTree = "<group>"; };
+		6E5EC0391EC5E43D00C75636 /* MGWaterFallFLowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGWaterFallFLowLayout.h; sourceTree = "<group>"; };
+		6E5EC03A1EC5E43D00C75636 /* MGWaterFallFLowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGWaterFallFLowLayout.m; sourceTree = "<group>"; };
 		ED84E4810247F1E8AB90A33A /* libPods-VideoAudioCapture.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VideoAudioCapture.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -87,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				6E5EC0131EC36FA900C75636 /* ImageLib */,
+				6E5EC0261EC5D5B300C75636 /* NetworkModule */,
 				6E5EC0041EC366B800C75636 /* ThridLibraries */,
 				6E5EC0031EC3667B00C75636 /* JSONModel */,
 				6E5EC0011EC3667400C75636 /* Class */,
@@ -115,6 +145,7 @@
 		6E5EC0011EC3667400C75636 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				6E5EC0381EC5E37A00C75636 /* Views */,
 				6E5EC0021EC3667400C75636 /* Controllers */,
 			);
 			path = Class;
@@ -123,6 +154,8 @@
 		6E5EC0021EC3667400C75636 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				6E5EC0161EC5D37E00C75636 /* BaseController */,
+				6E5EC0201EC5D52F00C75636 /* Discover.Controller */,
 				6E5EC00A1EC36A3600C75636 /* Capture.Controller */,
 			);
 			path = Controllers;
@@ -165,8 +198,61 @@
 			isa = PBXGroup;
 			children = (
 				6E5EC0141EC444FE00C75636 /* focus.png */,
+				6E5EC0271EC5DAB900C75636 /* TabBarImage */,
 			);
 			path = ImageLib;
+			sourceTree = "<group>";
+		};
+		6E5EC0161EC5D37E00C75636 /* BaseController */ = {
+			isa = PBXGroup;
+			children = (
+				6E5EC0171EC5D37E00C75636 /* BaseNavigationViewController.h */,
+				6E5EC0181EC5D37E00C75636 /* BaseNavigationViewController.m */,
+				6E5EC0191EC5D37E00C75636 /* BaseViewController.h */,
+				6E5EC01A1EC5D37E00C75636 /* BaseViewController.m */,
+				6E5EC01D1EC5D3B900C75636 /* BaseTabBarViewController.h */,
+				6E5EC01E1EC5D3B900C75636 /* BaseTabBarViewController.m */,
+			);
+			path = BaseController;
+			sourceTree = "<group>";
+		};
+		6E5EC0201EC5D52F00C75636 /* Discover.Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6E5EC0211EC5D59A00C75636 /* MDiscoverViewController.h */,
+				6E5EC0221EC5D59A00C75636 /* MDiscoverViewController.m */,
+				6E5EC0231EC5D59A00C75636 /* MDiscoverViewController.xib */,
+			);
+			path = Discover.Controller;
+			sourceTree = "<group>";
+		};
+		6E5EC0261EC5D5B300C75636 /* NetworkModule */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetworkModule;
+			sourceTree = "<group>";
+		};
+		6E5EC0271EC5DAB900C75636 /* TabBarImage */ = {
+			isa = PBXGroup;
+			children = (
+				6E5EC0281EC5DAB900C75636 /* 个人3-0.png */,
+				6E5EC0291EC5DAB900C75636 /* 个人3-1.png */,
+				6E5EC02A1EC5DAB900C75636 /* 发现1-0.png */,
+				6E5EC02B1EC5DAB900C75636 /* 发现1-1.png */,
+				6E5EC0341EC5E2C800C75636 /* 视频1-0.png */,
+				6E5EC0351EC5E2C800C75636 /* 视频1-1.png */,
+			);
+			path = TabBarImage;
+			sourceTree = "<group>";
+		};
+		6E5EC0381EC5E37A00C75636 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6E5EC0391EC5E43D00C75636 /* MGWaterFallFLowLayout.h */,
+				6E5EC03A1EC5E43D00C75636 /* MGWaterFallFLowLayout.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,10 +317,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E5EC0361EC5E2C800C75636 /* 视频1-0.png in Resources */,
+				6E5EC0311EC5DAB900C75636 /* 发现1-1.png in Resources */,
 				6E5EBFFA1EC3659300C75636 /* LaunchScreen.storyboard in Resources */,
+				6E5EC02F1EC5DAB900C75636 /* 个人3-1.png in Resources */,
+				6E5EC0301EC5DAB900C75636 /* 发现1-0.png in Resources */,
+				6E5EC0251EC5D59A00C75636 /* MDiscoverViewController.xib in Resources */,
 				6E5EC0151EC444FE00C75636 /* focus.png in Resources */,
+				6E5EC02E1EC5DAB900C75636 /* 个人3-0.png in Resources */,
 				6E5EBFF71EC3659300C75636 /* Assets.xcassets in Resources */,
 				6E5EBFF21EC3659300C75636 /* Main.storyboard in Resources */,
+				6E5EC0371EC5E2C800C75636 /* 视频1-1.png in Resources */,
 				6E5EC00F1EC36A3600C75636 /* MCaptureViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,10 +387,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E5EC0241EC5D59A00C75636 /* MDiscoverViewController.m in Sources */,
 				6E5EBFEF1EC3659300C75636 /* ViewController.m in Sources */,
+				6E5EC01B1EC5D37E00C75636 /* BaseNavigationViewController.m in Sources */,
 				6E5EC00E1EC36A3600C75636 /* MCaptureViewController.m in Sources */,
+				6E5EC01F1EC5D3B900C75636 /* BaseTabBarViewController.m in Sources */,
 				6E5EBFEC1EC3659300C75636 /* AppDelegate.m in Sources */,
+				6E5EC03B1EC5E43D00C75636 /* MGWaterFallFLowLayout.m in Sources */,
 				6E5EBFE91EC3659300C75636 /* main.m in Sources */,
+				6E5EC01C1EC5D37E00C75636 /* BaseViewController.m in Sources */,
 				6E5EBFF51EC3659300C75636 /* VideoAudioCapture.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
