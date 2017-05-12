@@ -42,15 +42,9 @@
     UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithTitle:@"摄像头" style:UIBarButtonItemStylePlain target:self action:@selector(chageCameraPosition)];
     self.navigationItem.rightBarButtonItem = rightItem;
     
-    UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonSystemItemCancel target:self action:@selector(backLastVC)];
-    self.navigationItem.leftBarButtonItem = leftItem;
+ 
 }
 
-- (void)backLastVC
-{
-    [self.navigationController popViewControllerAnimated:YES];
-    [self.captureSession stopRunning];
-}
 
 - (void)setCaptureVideo_Audio
 {
