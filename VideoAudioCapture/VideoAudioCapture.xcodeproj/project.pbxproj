@@ -18,9 +18,12 @@
 		6E5EC00F1EC36A3600C75636 /* MCaptureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E5EC00D1EC36A3600C75636 /* MCaptureViewController.xib */; };
 		6E5EC0121EC36AE500C75636 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E5EC0111EC36AE500C75636 /* AVFoundation.framework */; };
 		6E5EC0151EC444FE00C75636 /* focus.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E5EC0141EC444FE00C75636 /* focus.png */; };
+		BDC5F59B6B94D6B5FEC01522 /* libPods-VideoAudioCapture.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED84E4810247F1E8AB90A33A /* libPods-VideoAudioCapture.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2818249AA74D8C0EB4B84BA3 /* Pods-VideoAudioCapture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoAudioCapture.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VideoAudioCapture/Pods-VideoAudioCapture.debug.xcconfig"; sourceTree = "<group>"; };
+		56C57DD1B29E5DDAEE20D2C8 /* Pods-VideoAudioCapture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoAudioCapture.release.xcconfig"; path = "Pods/Target Support Files/Pods-VideoAudioCapture/Pods-VideoAudioCapture.release.xcconfig"; sourceTree = "<group>"; };
 		6E5EBFE41EC3659300C75636 /* VideoAudioCapture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoAudioCapture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E5EBFE81EC3659300C75636 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6E5EBFEA1EC3659300C75636 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -37,6 +40,7 @@
 		6E5EC00D1EC36A3600C75636 /* MCaptureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MCaptureViewController.xib; sourceTree = "<group>"; };
 		6E5EC0111EC36AE500C75636 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		6E5EC0141EC444FE00C75636 /* focus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = focus.png; sourceTree = "<group>"; };
+		ED84E4810247F1E8AB90A33A /* libPods-VideoAudioCapture.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VideoAudioCapture.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,18 +49,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E5EC0121EC36AE500C75636 /* AVFoundation.framework in Frameworks */,
+				BDC5F59B6B94D6B5FEC01522 /* libPods-VideoAudioCapture.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25C0566F51558631AD41A366 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2818249AA74D8C0EB4B84BA3 /* Pods-VideoAudioCapture.debug.xcconfig */,
+				56C57DD1B29E5DDAEE20D2C8 /* Pods-VideoAudioCapture.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6E5EBFDB1EC3659300C75636 = {
 			isa = PBXGroup;
 			children = (
 				6E5EBFE61EC3659300C75636 /* VideoAudioCapture */,
 				6E5EBFE51EC3659300C75636 /* Products */,
 				6E5EC0101EC36AE500C75636 /* Frameworks */,
+				25C0566F51558631AD41A366 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				6E5EC0111EC36AE500C75636 /* AVFoundation.framework */,
+				ED84E4810247F1E8AB90A33A /* libPods-VideoAudioCapture.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -160,9 +176,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6E5EBFFE1EC3659300C75636 /* Build configuration list for PBXNativeTarget "VideoAudioCapture" */;
 			buildPhases = (
+				F5E6579459A5B1B7E7D709D3 /* [CP] Check Pods Manifest.lock */,
 				6E5EBFE01EC3659300C75636 /* Sources */,
 				6E5EBFE11EC3659300C75636 /* Frameworks */,
 				6E5EBFE21EC3659300C75636 /* Resources */,
+				5983E9C29F87F86C51E215D8 /* [CP] Embed Pods Frameworks */,
+				8393909A978EBCA22FA0FD32 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -221,6 +240,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5983E9C29F87F86C51E215D8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VideoAudioCapture/Pods-VideoAudioCapture-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8393909A978EBCA22FA0FD32 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VideoAudioCapture/Pods-VideoAudioCapture-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5E6579459A5B1B7E7D709D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6E5EBFE01EC3659300C75636 /* Sources */ = {
@@ -349,6 +416,7 @@
 		};
 		6E5EBFFF1EC3659300C75636 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2818249AA74D8C0EB4B84BA3 /* Pods-VideoAudioCapture.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 494KFCEEMF;
@@ -361,6 +429,7 @@
 		};
 		6E5EC0001EC3659300C75636 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56C57DD1B29E5DDAEE20D2C8 /* Pods-VideoAudioCapture.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 494KFCEEMF;
