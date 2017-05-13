@@ -19,6 +19,30 @@ static AFN_Network *afn_net = nil;
 
 @implementation AFN_Network
 
+static AFHTTPSessionManager *manager;
+
++(AFHTTPSessionManager *)sharedHttpSessionManager {
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        // 初始化请求管理类
+        manager = [AFHTTPSessionManager manager];
+        manager.requestSerializer = [AFJSONRequestSerializer serializer];
+        
+        // 设置15秒超时 - 取消请求
+        manager.requestSerializer.timeoutInterval = 15.0;
+        // 编码
+        manager.requestSerializer.stringEncoding = NSUTF8StringEncoding;
+        // 缓存策略
+        manager.requestSerializer.cachePolicy = NSURLRequestReloadIgnoringLocalCacheData;
+        
+        manager.responseSerializer = [AFJSONResponseSerializer serializer];
+        // 支持内容格式
+        manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/plain", @"text/JavaScript", @"text/json", @"text/html", nil];
+    });
+    
+    return manager;
+}
+
 - (instancetype)AFN_Manager
 {
     static dispatch_once_t onceToken;
@@ -30,12 +54,8 @@ static AFN_Network *afn_net = nil;
 
 + (void)afn_NetworkRequst:(AFN_Request_type)type URL:(NSString *)url AFN_NetworkDelegate:(id<AFN_NetworkDelegate>)delegate
 {
-  
-    
-    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html",@"application/json",@"text/javascript",@"text/json",@"text/plain", nil];
+    AFHTTPSessionManager *manager = [AFN_Network sharedHttpSessionManager];
 
-    [[AFNetworkReachabilityManager sharedManager] startMonitoring];
     
     [manager GET:url parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
 //        NSLog(@"%@",responseObject);

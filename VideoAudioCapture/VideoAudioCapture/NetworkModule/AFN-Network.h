@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 @class AFN_Network;
+@class AFHTTPSessionManager;
 @protocol AFN_NetworkDelegate <NSObject>
 
 @optional
@@ -24,6 +25,7 @@ typedef NS_ENUM(NSUInteger, AFN_Request_type) {
 @property (weak, nonatomic) id<AFN_NetworkDelegate>afnDelegate;
 
 - (instancetype)AFN_Manager;
++(AFHTTPSessionManager *)sharedHttpSessionManager;
 
 + (void)afn_NetworkRequst:(AFN_Request_type)type URL:(NSString *)url AFN_NetworkDelegate:(id<AFN_NetworkDelegate>)delegate;
 
